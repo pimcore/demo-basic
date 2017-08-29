@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-/** 
+/**
 * Generated at: 2017-04-10T12:45:18+02:00
 * Inheritance: no
 * Variants: no
@@ -8,20 +8,20 @@
 * IP: 192.168.85.1
 
 
-Fields Summary: 
+Fields Summary:
 - username [input]
 - password [password]
 - roles [multiselect]
-*/ 
+*/
 
-namespace Pimcore\Model\Object;
+namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method \Pimcore\Model\Object\User\Listing getByUsername ($value, $limit = 0) 
-* @method \Pimcore\Model\Object\User\Listing getByPassword ($value, $limit = 0) 
-* @method \Pimcore\Model\Object\User\Listing getByRoles ($value, $limit = 0) 
+* @method \Pimcore\Model\DataObject\User\Listing getByUsername ($value, $limit = 0)
+* @method \Pimcore\Model\DataObject\User\Listing getByPassword ($value, $limit = 0)
+* @method \Pimcore\Model\DataObject\User\Listing getByRoles ($value, $limit = 0)
 */
 
 class User extends Concrete {
@@ -35,7 +35,7 @@ public $roles;
 
 /**
 * @param array $values
-* @return \Pimcore\Model\Object\User
+* @return \Pimcore\Model\DataObject\User
 */
 public static function create($values = array()) {
 	$object = new static();
@@ -48,8 +48,8 @@ public static function create($values = array()) {
 * @return string
 */
 public function getUsername () {
-	$preValue = $this->preGetValue("username"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("username");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	$data = $this->username;
@@ -59,7 +59,7 @@ public function getUsername () {
 /**
 * Set username - Username
 * @param string $username
-* @return \Pimcore\Model\Object\User
+* @return \Pimcore\Model\DataObject\User
 */
 public function setUsername ($username) {
 	$this->username = $username;
@@ -71,8 +71,8 @@ public function setUsername ($username) {
 * @return string
 */
 public function getPassword () {
-	$preValue = $this->preGetValue("password"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("password");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	$data = $this->password;
@@ -82,7 +82,7 @@ public function getPassword () {
 /**
 * Set password - Password
 * @param string $password
-* @return \Pimcore\Model\Object\User
+* @return \Pimcore\Model\DataObject\User
 */
 public function setPassword ($password) {
 	$this->password = $password;
@@ -94,8 +94,8 @@ public function setPassword ($password) {
 * @return array
 */
 public function getRoles () {
-	$preValue = $this->preGetValue("roles"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("roles");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	$data = $this->roles;
@@ -105,7 +105,7 @@ public function getRoles () {
 /**
 * Set roles - Roles
 * @param array $roles
-* @return \Pimcore\Model\Object\User
+* @return \Pimcore\Model\DataObject\User
 */
 public function setRoles ($roles) {
 	$this->roles = $roles;

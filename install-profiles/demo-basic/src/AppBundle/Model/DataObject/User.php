@@ -1,9 +1,9 @@
 <?php
 
-namespace AppBundle\Model\Object;
+namespace AppBundle\Model\DataObject;
 
-use Pimcore\Model\Object\ClassDefinition\Data\Password;
-use Pimcore\Model\Object\User as BaseUser;
+use Pimcore\Model\DataObject\ClassDefinition\Data\Password;
+use Pimcore\Model\DataObject\User as BaseUser;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**

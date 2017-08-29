@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-/** 
+/**
 * Generated at: 2016-08-09T09:00:04+02:00
 * Inheritance: no
 * Variants: no
@@ -8,22 +8,22 @@
 * IP: 192.168.11.111
 
 
-Fields Summary: 
+Fields Summary:
 - date [datetime]
 - person [href]
 - message [textarea]
 - terms [checkbox]
-*/ 
+*/
 
-namespace Pimcore\Model\Object;
+namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method static \Pimcore\Model\Object\Inquiry\Listing getByDate ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Inquiry\Listing getByPerson ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Inquiry\Listing getByMessage ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Inquiry\Listing getByTerms ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Inquiry\Listing getByDate ($value, $limit = 0)
+* @method static \Pimcore\Model\DataObject\Inquiry\Listing getByPerson ($value, $limit = 0)
+* @method static \Pimcore\Model\DataObject\Inquiry\Listing getByMessage ($value, $limit = 0)
+* @method static \Pimcore\Model\DataObject\Inquiry\Listing getByTerms ($value, $limit = 0)
 */
 
 class Inquiry extends Concrete {
@@ -38,7 +38,7 @@ public $terms;
 
 /**
 * @param array $values
-* @return \Pimcore\Model\Object\Inquiry
+* @return \Pimcore\Model\DataObject\Inquiry
 */
 public static function create($values = array()) {
 	$object = new static();
@@ -51,8 +51,8 @@ public static function create($values = array()) {
 * @return \Pimcore\Date
 */
 public function getDate () {
-	$preValue = $this->preGetValue("date"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("date");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	$data = $this->date;
@@ -62,7 +62,7 @@ public function getDate () {
 /**
 * Set date - Date
 * @param \Pimcore\Date $date
-* @return \Pimcore\Model\Object\Inquiry
+* @return \Pimcore\Model\DataObject\Inquiry
 */
 public function setDate ($date) {
 	$this->date = $date;
@@ -71,11 +71,11 @@ public function setDate ($date) {
 
 /**
 * Get person - Person
-* @return \Pimcore\Model\Object\person
+* @return \Pimcore\Model\DataObject\person
 */
 public function getPerson () {
-	$preValue = $this->preGetValue("person"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("person");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("person")->preGetData($this);
@@ -84,8 +84,8 @@ public function getPerson () {
 
 /**
 * Set person - Person
-* @param \Pimcore\Model\Object\person $person
-* @return \Pimcore\Model\Object\Inquiry
+* @param \Pimcore\Model\DataObject\person $person
+* @return \Pimcore\Model\DataObject\Inquiry
 */
 public function setPerson ($person) {
 	$this->person = $this->getClass()->getFieldDefinition("person")->preSetData($this, $person);
@@ -97,8 +97,8 @@ public function setPerson ($person) {
 * @return string
 */
 public function getMessage () {
-	$preValue = $this->preGetValue("message"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("message");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	$data = $this->message;
@@ -108,7 +108,7 @@ public function getMessage () {
 /**
 * Set message - Message
 * @param string $message
-* @return \Pimcore\Model\Object\Inquiry
+* @return \Pimcore\Model\DataObject\Inquiry
 */
 public function setMessage ($message) {
 	$this->message = $message;
@@ -120,8 +120,8 @@ public function setMessage ($message) {
 * @return boolean
 */
 public function getTerms () {
-	$preValue = $this->preGetValue("terms"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("terms");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	$data = $this->terms;
@@ -131,7 +131,7 @@ public function getTerms () {
 /**
 * Set terms - Terms of Use
 * @param boolean $terms
-* @return \Pimcore\Model\Object\Inquiry
+* @return \Pimcore\Model\DataObject\Inquiry
 */
 public function setTerms ($terms) {
 	$this->terms = $terms;
@@ -139,7 +139,7 @@ public function setTerms ($terms) {
 }
 
 protected static $_relationFields = array (
-  'person' => 
+  'person' =>
   array (
     'type' => 'href',
   ),

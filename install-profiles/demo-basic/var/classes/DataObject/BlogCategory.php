@@ -1,23 +1,23 @@
-<?php 
+<?php
 
-/** 
+/**
 * Generated at: 2016-08-09T09:00:04+02:00
 * Inheritance: no
 * Variants: no
 * IP: 192.168.11.111
 
 
-Fields Summary: 
+Fields Summary:
 - localizedfields [localizedfields]
 -- name [input]
-*/ 
+*/
 
-namespace Pimcore\Model\Object;
+namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method static \Pimcore\Model\Object\BlogCategory\Listing getByLocalizedfields ($field, $value, $locale = null, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\BlogCategory\Listing getByLocalizedfields ($field, $value, $locale = null, $limit = 0)
 */
 
 class BlogCategory extends Concrete {
@@ -29,7 +29,7 @@ public $localizedfields;
 
 /**
 * @param array $values
-* @return \Pimcore\Model\Object\BlogCategory
+* @return \Pimcore\Model\DataObject\BlogCategory
 */
 public static function create($values = array()) {
 	$object = new static();
@@ -38,12 +38,12 @@ public static function create($values = array()) {
 }
 
 /**
-* Get localizedfields - 
-* @return \Pimcore\Model\Object\Localizedfield
+* Get localizedfields -
+* @return \Pimcore\Model\DataObject\Localizedfield
 */
 public function getLocalizedfields () {
-	$preValue = $this->preGetValue("localizedfields"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("localizedfields");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("localizedfields")->preGetData($this);
@@ -56,17 +56,17 @@ public function getLocalizedfields () {
 */
 public function getName ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("name", $language);
-	$preValue = $this->preGetValue("name"); 
-	if($preValue !== null && !\Pimcore::inAdmin()) { 
+	$preValue = $this->preGetValue("name");
+	if($preValue !== null && !\Pimcore::inAdmin()) {
 		return $preValue;
 	}
 	 return $data;
 }
 
 /**
-* Set localizedfields - 
-* @param \Pimcore\Model\Object\Localizedfield $localizedfields
-* @return \Pimcore\Model\Object\BlogCategory
+* Set localizedfields -
+* @param \Pimcore\Model\DataObject\Localizedfield $localizedfields
+* @return \Pimcore\Model\DataObject\BlogCategory
 */
 public function setLocalizedfields ($localizedfields) {
 	$this->localizedfields = $localizedfields;
@@ -76,7 +76,7 @@ public function setLocalizedfields ($localizedfields) {
 /**
 * Set name - Name
 * @param string $name
-* @return \Pimcore\Model\Object\BlogCategory
+* @return \Pimcore\Model\DataObject\BlogCategory
 */
 public function setName ($name, $language = null) {
 	$this->getLocalizedfields()->setLocalizedValue("name", $name, $language);
