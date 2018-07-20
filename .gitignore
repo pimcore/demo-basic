@@ -55,6 +55,9 @@
 # NetBeans
 nbproject
 
+# Core / bundle development
+/dev/
+
 # keep legacy paths ignored for easier migration
 /plugins/
 /tools/
