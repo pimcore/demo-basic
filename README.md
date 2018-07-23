@@ -12,9 +12,10 @@ Pimcore and contains some very basic use-cases to get you started quickly with P
 ## Getting started 
 ```bash
 composer create-project pimcore/demo-basic my-project
+./vendor/bin/pimcore-install
 ```
 
 - Point your virtual host to `my-project/web` 
-- Open https://your-host/install in your browser
+- Open https://your-host/admin in your browser
 - Done! 😎
 
