@@ -35,7 +35,7 @@
 /var/config/reports.php
 
 
-/web/var/
+#/web/var/
 /web/sitemap*.xml
 
 # PHP-CS-Fixer
