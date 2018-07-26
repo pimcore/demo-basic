@@ -1,9 +1,14 @@
 <?php
 
-include_once('../../../pimcore/config/startup_cli.php');
+include __DIR__ . "/../vendor/autoload.php";
+
+\Pimcore\Bootstrap::setProjectRoot();
+\Pimcore\Bootstrap::boostrap();
+\Pimcore\Bootstrap::startupCli();
+
 
 // get tables which are already in install.sql
-$installSql = file_get_contents(PIMCORE_PATH . '/lib/Pimcore/Install/Resources/install.sql');
+$installSql = file_get_contents(PIMCORE_PATH . '/bundles/InstallBundle/Resources/install.sql');
 preg_match_all('/CREATE TABLE `(.*)`/', $installSql, $matches);
 $existingTables = $matches[1];
 
