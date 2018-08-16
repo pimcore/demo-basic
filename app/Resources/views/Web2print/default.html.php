@@ -100,7 +100,7 @@
     </style>
 
     <?php if($this->printermarks) { ?>
-        <link rel="stylesheet" type="text/css" href="/pimcore/static6/css/print/print-printermarks.css" media="print" />
+        <link rel="stylesheet" type="text/css" href="/bundles/pimcoreadmin/css/print/print-printermarks.css" media="print" />
     <?php } ?>
 
 
@@ -115,7 +115,7 @@
 <div id="site">
     <div class="page">
         <div id="logo">
-            <a href="http://www.pimcore.org/"><img style="width: 200px" src="/pimcore/static6/img/logo.png" /></a>
+            <a href="http://www.pimcore.org/"><img style="width: 200px" src="/bundles/pimcoreadmin/img/logo.png" /></a>
             <hr />
             <div class="claim">
                 THE OPEN-SOURCE ENTERPRISE PLATFORM FOR PIM, CMS, DAM & COMMERCE based on Symfony
