@@ -9,7 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width"/>
-<style>
+<style type="text/css">
 /**********************************************
 * Ink v1.0.4 - Copyright 2013 ZURB Inc        *
 **********************************************/
