@@ -34,6 +34,7 @@ pimcore:
 #            'Pimcore\Model\Document\Page': 'AppBundle\Model\Document\Page'
 #            'Pimcore\Model\Document\Link': 'AppBundle\Model\Document\Link'
 #            'Pimcore\Model\Document\Listing': 'AppBundle\Model\Document\Listing'
+#            'Pimcore\Model\Version': 'AppBundle\Model\Version'
 
 
 #### CUSTOM DOCUMENT EDITABLES
