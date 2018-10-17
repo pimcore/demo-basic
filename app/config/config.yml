@@ -60,6 +60,8 @@ pimcore:
 #            low_quality_image_preview:
 #                enabled: false
 #                generator: imagick
+#            thumbnails:
+#                webp_auto_support: false
 
 #### SYMFONY OVERRIDES
 framework:
