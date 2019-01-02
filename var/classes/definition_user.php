@@ -1,33 +1,36 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-04-10T12:45:18+02:00
+/** 
+* Generated at: 2019-01-02T14:52:12+01:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (3)
-* IP: 192.168.85.1
+* Changed by: admin (4)
+* IP: 192.168.9.15
 
 
-Fields Summary:
+Fields Summary: 
 - username [input]
 - password [password]
 - roles [multiselect]
-*/
+*/ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '7',
    'name' => 'user',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1491821118,
+   'modificationDate' => 1546437132,
    'userOwner' => 3,
-   'userModification' => 3,
+   'userModification' => 4,
    'parentClass' => '',
+   'listingParentClass' => '',
    'useTraits' => '',
+   'listingUseTraits' => '',
    'allowInherit' => false,
-   'allowVariants' => false,
+   'allowVariants' => NULL,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -38,14 +41,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
-     'collapsed' => NULL,
+     'collapsible' => false,
+     'collapsed' => false,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
@@ -61,9 +64,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'labelWidth' => 100,
@@ -79,9 +82,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => '',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => NULL,
@@ -90,6 +93,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'columnLength' => 190,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
+                 'showCharCount' => NULL,
                  'name' => 'username',
                  'title' => 'Username',
                  'tooltip' => '',
@@ -105,7 +110,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Password::__set_state(array(
                  'fieldtype' => 'password',
                  'width' => '',
@@ -130,17 +135,17 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Multiselect::__set_state(array(
                  'fieldtype' => 'multiselect',
-                 'options' =>
+                 'options' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'key' => 'Admin',
                     'value' => 'ROLE_ADMIN',
                   ),
-                  1 =>
+                  1 => 
                   array (
                     'key' => 'User',
                     'value' => 'ROLE_USER',
@@ -149,6 +154,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => '',
                  'height' => '',
                  'maxItems' => '',
+                 'renderType' => NULL,
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'text',
                  'columnType' => 'text',
                  'phpdocType' => 'array',
@@ -174,24 +182,28 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
-   'propertyVisibility' =>
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => '',
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,

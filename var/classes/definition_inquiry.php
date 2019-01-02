@@ -1,34 +1,37 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2016-08-09T09:00:04+02:00
+/** 
+* Generated at: 2019-01-02T14:52:00+01:00
 * Inheritance: no
 * Variants: no
-* Changed by: system (0)
-* IP: 192.168.11.111
+* Changed by: admin (4)
+* IP: 192.168.9.15
 
 
-Fields Summary:
+Fields Summary: 
 - date [datetime]
-- person [href]
+- person [manyToOneRelation]
 - message [textarea]
 - terms [checkbox]
-*/
+*/ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '3',
    'name' => 'inquiry',
    'description' => '',
    'creationDate' => 1368620413,
-   'modificationDate' => 1470726004,
+   'modificationDate' => 1546437120,
    'userOwner' => 0,
-   'userModification' => 0,
+   'userModification' => 4,
    'parentClass' => '',
-   'useTraits' => NULL,
+   'listingParentClass' => '',
+   'useTraits' => '',
+   'listingUseTraits' => '',
    'allowInherit' => false,
-   'allowVariants' => false,
+   'allowVariants' => NULL,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -40,13 +43,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'width' => NULL,
      'height' => NULL,
      'collapsible' => false,
-     'collapsed' => NULL,
+     'collapsed' => false,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
@@ -62,9 +65,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'labelWidth' => 100,
@@ -76,18 +79,18 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'width' => NULL,
              'height' => NULL,
              'collapsible' => false,
-             'collapsed' => NULL,
+             'collapsed' => false,
              'bodyStyle' => NULL,
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Datetime::__set_state(array(
                  'fieldtype' => 'datetime',
                  'queryColumnType' => 'bigint(20)',
                  'columnType' => 'bigint(20)',
-                 'phpdocType' => '\\Pimcore\\Date',
+                 'phpdocType' => '\\Carbon\\Carbon',
                  'defaultValue' => NULL,
                  'useCurrentDate' => false,
                  'name' => 'date',
@@ -105,13 +108,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              1 =>
-              Pimcore\Model\DataObject\ClassDefinition\Data\Href::__set_state(array(
-                 'fieldtype' => 'href',
+              1 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\ManyToOneRelation::__set_state(array(
+                 'fieldtype' => 'manyToOneRelation',
                  'width' => 450,
                  'assetUploadPath' => '',
                  'relationType' => true,
-                 'queryColumnType' =>
+                 'queryColumnType' => 
                 array (
                   'id' => 'int(11)',
                   'type' => 'enum(\'document\',\'asset\',\'object\')',
@@ -119,21 +122,22 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
                  'objectsAllowed' => true,
                  'assetsAllowed' => false,
-                 'assetTypes' =>
+                 'assetTypes' => 
                 array (
                 ),
                  'documentsAllowed' => false,
-                 'documentTypes' =>
+                 'documentTypes' => 
                 array (
                 ),
                  'lazyLoading' => false,
-                 'classes' =>
+                 'classes' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'classes' => 'person',
                   ),
                 ),
+                 'pathFormatterClass' => NULL,
                  'name' => 'person',
                  'title' => 'Person',
                  'tooltip' => '',
@@ -144,16 +148,17 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
-                 'columnType' => NULL,
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Textarea::__set_state(array(
                  'fieldtype' => 'textarea',
                  'width' => 450,
                  'height' => '',
+                 'maxLength' => NULL,
+                 'showCharCount' => NULL,
                  'queryColumnType' => 'longtext',
                  'columnType' => 'longtext',
                  'phpdocType' => 'string',
@@ -172,7 +177,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              3 =>
+              3 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'fieldtype' => 'checkbox',
                  'defaultValue' => 0,
@@ -205,20 +210,24 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
   )),
    'icon' => '',
    'previewUrl' => '',
-   'group' => NULL,
-   'propertyVisibility' =>
+   'group' => '',
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => '',
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,
