@@ -5,7 +5,7 @@ Pimcore and contains some very basic use-cases to get you started quickly with P
 
 ## Getting started 
 ```bash
-COMPOSER_MEMORY_LIMIT=3G composer create-project pimcore/demo-basic:dev-master my-project
+COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/demo-basic:dev-master my-project
 cd ./my-project
 ./vendor/bin/pimcore-install
 ```
