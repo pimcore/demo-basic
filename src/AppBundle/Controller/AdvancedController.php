@@ -50,8 +50,7 @@ class AdvancedController extends FrontendController
                     }
                 }
             }
-        } else {
-            if ($form->isValid()) {
+        } else if ($form->isSubmitted() && $form->isValid()) {
                 $success = true;
 
                 $data = $form->getData();
@@ -73,7 +72,6 @@ class AdvancedController extends FrontendController
 
                 // add form data as view parameters
                 $this->view->getParameters()->add($data);
-            }
         }
 
         $this->view->success = $success;
