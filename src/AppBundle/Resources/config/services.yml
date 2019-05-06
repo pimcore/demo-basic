@@ -26,7 +26,8 @@ services:
 
     # auto-register all commands as services
     AppBundle\Command\:
-        resource: '../../Command'
+        resource: '../../Command/*'
+        tags: ['console.command']
 
 
     #
