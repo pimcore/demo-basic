@@ -12,7 +12,7 @@
         <div class="row">
 
             <?php
-            $children   = $this->asset->getChilds();
+            $children   = $this->asset->getChildren();
             $count      = 0;
             $totalCount = count($children);
 
