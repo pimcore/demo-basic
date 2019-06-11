@@ -1,0 +1,107 @@
+pimcore:
+  general:
+    timezone: Europe/Berlin
+    php_cli: ''
+    domain: ''
+    redirect_to_maindomain: false
+    language: en
+    theme: ''
+    contactemail: ''
+    debug: false
+    debug_ip: ''
+    http_auth:
+      username: ''
+      password: ''
+    debug_admin_translations: false
+    devmode: false
+    show_cookie_notice: false
+    valid_languages: 'en,de'
+    fallback_languages:
+      en: ''
+      de: ''
+    disable_usage_statistics: false
+    instance_identifier: ''
+  documents:
+    versions:
+      days: null
+      steps: 10
+    error_pages:
+      default: /error
+    allowcapitals: 'no'
+    wkhtmltoimage: ''
+    wkhtmltopdf: ''
+    create_redirect_when_moved: false
+    allow_trailing_slash: 'no'
+    generate_preview: true
+  objects:
+    versions:
+      days: null
+      steps: 10
+  assets:
+    versions:
+      days: null
+      steps: 10
+    icc_rgb_profile: ''
+    icc_cmyk_profile: ''
+    hide_edit_image: false
+  services:
+    google:
+      client_id: 655439141282-tic94n6q3j7ca5c5as132sspeftu5pli.apps.googleusercontent.com
+      email: 655439141282-tic94n6q3j7ca5c5as132sspeftu5pli@developer.gserviceaccount.com
+      simple_api_key: AIzaSyCo9Wj49hYJWW2WgOju4iMYNTvdcBxmyQ8
+      browser_api_key: AIzaSyBJX16kWAmUVEz1c1amzp2iKqAfumbcoQQ
+  cache:
+    enabled: false
+    lifetime: null
+    exclude_patterns: ''
+    exclude_cookie: ''
+  webservice:
+    enabled: true
+  httpclient:
+    adapter: Socket
+    proxy_host: ''
+    proxy_port: ''
+    proxy_user: ''
+    proxy_pass: ''
+  email:
+    sender:
+      name: ''
+      email: ''
+    return:
+      name: ''
+      email: ''
+    method: sendmail
+    debug:
+      email_addresses: ''
+  newsletter:
+    sender:
+      name: ''
+      email: ''
+    return:
+      name: ''
+      email: ''
+    method: sendmail
+    use_specific: ''
+pimcore_admin:
+  branding:
+    login_screen_custom_image: ''
+swiftmailer:
+  mailers:
+    pimcore_mailer:
+      transport: sendmail
+      delivery_addresses: {  }
+      host: ''
+      username: ''
+      password: ''
+      port: ''
+      encryption: null
+      auth_mode: null
+    newsletter_mailer:
+      transport: sendmail
+      delivery_addresses: {  }
+      host: ''
+      username: ''
+      password: ''
+      port: ''
+      encryption: null
+      auth_mode: null
