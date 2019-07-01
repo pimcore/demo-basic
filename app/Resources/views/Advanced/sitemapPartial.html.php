@@ -10,7 +10,7 @@
 
 <?php if ($this->doc->hasChilds()) { ?>
     <ul>
-        <?php foreach ($this->doc->getChilds() as $child) { ?>
+        <?php foreach ($this->doc->getChildren() as $child) { ?>
             <?php if (in_array($child->getType(), ["page", "link"])) { ?>
                 <?= $this->render('Advanced/sitemapPartial.html.php', ['doc' => $child]); ?>
             <?php } ?>
