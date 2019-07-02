@@ -1779,7 +1779,7 @@ INSERT INTO documents_elements (`documentId`,`name`,`type`,`data`) VALUES ('74',
 INSERT INTO documents_elements (`documentId`,`name`,`type`,`data`) VALUES ('74','headTitle','input','');
 INSERT INTO documents_email (`id`,`module`,`controller`,`action`,`template`,`to`,`from`,`replyTo`,`cc`,`bcc`,`subject`) VALUES ('38','','default','default','Advanced/email.html.php','pimcore@byom.de','pimcore@byom.de','','','','Contact Form');
 INSERT INTO documents_email (`id`,`module`,`controller`,`action`,`template`,`to`,`from`,`replyTo`,`cc`,`bcc`,`subject`) VALUES ('66','','newsletter','standard-mail','','','','','','','');
-INSERT INTO documents_hardlink (`id`,`sourceId`,`propertiesFromSource`,`childsFromSource`) VALUES ('33','3','1','1');
+INSERT INTO documents_hardlink (`id`,`sourceId`,`propertiesFromSource`,`childrenFromSource`) VALUES ('33','3','1','1');
 INSERT INTO documents_link (`id`,`internalType`,`internal`,`direct`,`linktype`) VALUES ('32',NULL,'0','http://www.pimcore.org/','direct');
 INSERT INTO documents_link (`id`,`internalType`,`internal`,`direct`,`linktype`) VALUES ('40','document','1','','internal');
 INSERT INTO documents_newsletter (`id`,`module`,`controller`,`action`,`template`,`from`,`subject`,`trackingParameterSource`,`trackingParameterMedium`,`trackingParameterName`,`enableTrackingParameters`,`sendingMode`) VALUES ('67','','newsletter','standard-mail','','','Example Newsletter','newsletter','email','example-mailing','1','single');
